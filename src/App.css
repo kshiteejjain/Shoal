@@ -1,0 +1,191 @@
+p {
+  display: block;
+  margin: 0 0 10px 0;
+  color: #161616;
+  font-weight: 300;
+  font-size: 01rem;
+  line-height: 25px;
+}
+
+.heading-medium {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #282828;
+  margin-bottom: 5rem;
+}
+
+.buttonPrimary {
+  padding: 0.8rem 2rem;
+  color: #fff;
+  background-color: #7164fd;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.buttonPrimary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.buttonPrimary:hover {
+  background-color: #3748b4;
+}
+
+.dropdown {
+  padding: 0.5rem 0.3rem;
+  background-color: #fff;
+  color: #363636;
+  border: 1px solid #b6b6b6;
+  border-radius: 0.1rem;
+  font-size: 0.9rem;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.error {
+  color: #c60606;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+table {
+  width: 100%;
+  background-color: #fff;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+
+table tr:hover {
+  background-color: #f4f4f4;
+}
+
+table td,
+th {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  text-align: left;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #2b2b2b;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+}
+.filters{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cacedf;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.datepicker {
+  padding:0 1rem;
+  border-radius: 0.5rem;
+}
+.datepicker input{
+  padding: 0.5rem 0.3rem;
+  background-color: #fff;
+  color: #363636;
+  border: 1px solid #b6b6b6;
+  border-radius: 0.1rem;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+.datepicker input[type="submit"],input[type="reset"]{
+  margin-left: 1rem;
+  background-color: #7163fd;
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.datepicker label{
+  margin-left: 1rem;
+}
+.mandatory{
+  color: #c60606;
+  font-weight: bold;
+}
+
+@media (max-screen: 1024px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+@media(max-width:767px){
+  .filters{
+    flex-direction: column;
+  }
+  .dropdown{
+    width: 100%;
+    margin:0 0 0.5rem 0;
+  }
+  .datepicker{
+    padding: 0;
+    width: 100%;
+  }
+  .datepicker input{
+    width: 100%;
+  }
+  .datepicker label{
+    margin:0 0 0.5rem 0;
+    display: block;
+  }
+  .filters label{
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+}

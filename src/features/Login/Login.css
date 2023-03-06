@@ -1,0 +1,143 @@
+.loginWrapper {
+  background-color: #7164fd;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.left-side {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.left-side h2 {
+  font-size: 2rem;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  line-height: normal;
+  color: #fff;
+}
+
+.left-side p {
+  color: #fff;
+  text-align: center;
+}
+
+.savingsGoalsImage {
+  max-height: 35rem;
+}
+
+.logo {
+  max-width: 9rem;
+  margin-bottom: 2rem;
+}
+
+.form {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0 10%;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.formControl {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.form .formInput {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #e6e3ee;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  color: #161616;
+  font-size: 0.9rem;
+  background-color: #f5f4f8;
+}
+
+.form .formInput:focus {
+  outline: 0;
+  border-color: #8c8c8c;
+}
+
+.form label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 1rem;
+  color: #363636;
+}
+
+.form .buttonPrimary {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form h3 {
+  color: #363636;
+  font-size: 2rem;
+  margin:0 0 1rem 0;
+}
+.form p {
+  text-align: center;
+}
+
+.loader{
+  display: flex;
+}
+.loader img{
+  max-width: 20px;
+  margin-right: 5px;
+  -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+
+@media(max-width:767px) {
+  .form {
+    padding:5%;
+  }
+  .loginWrapper{
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .left-side h2{
+    margin: 1.5rem;
+  }
+  .datepicker input[type="submit"], input[type="reset"]{
+    margin: 0.5rem 0 !important;
+  }
+}
+@media(min-width:767px) and (max-width:1024px) {
+  .form {
+    padding: 0 5%;
+  }
+  .form {
+    max-width: 73%;
+    min-width: auto;
+    padding: 0 1%;
+  }
+}

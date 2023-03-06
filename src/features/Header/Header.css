@@ -1,0 +1,10 @@
+.header{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem 0;
+}
+.logo{
+    max-width: 120px;
+}

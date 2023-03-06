@@ -1,0 +1,51 @@
+.sideBar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #7164fd;
+    width: 10%;
+}
+.sideBarUl{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sideBarUl li{
+    display: block;
+}
+.sideBarUl li:hover{
+    background-color: #5f52de;
+}
+.sideBarUl li a{
+    display: flex;
+    padding: 1rem;
+    font-size: 0.95rem;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+.sideBarUl li a img{
+    max-width: 1.5rem;
+    margin-right: 0.5rem;
+}
+.logo{
+    max-width: 120px;
+}
+.burger-menu{
+    max-width: 30px;
+    margin: 2rem 0 2rem 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 767px){
+    .sideBarUl li a span{
+        display: none;
+    }
+    .sideBar{
+        width: 13%;
+    }
+    .inner-page{
+        padding-left: 17% !important;
+    }
+}

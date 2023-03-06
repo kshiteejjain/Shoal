@@ -1,0 +1,116 @@
+.inner-page{
+    background-color: #f5f6fa;
+    padding: 20px 0;
+    min-height: 800px;
+    padding-left: 10%;
+}
+h2{
+    font-size: 1rem;
+    margin-top: 20px;
+    display: inline-block;
+    color: #363636;
+}
+
+ul.pagination-status {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination-status__item {
+    display: inline;
+}
+
+.pagination-status .pagination-status__btn {
+    position: relative;
+    float: left;
+    padding: 0.3rem 1rem;
+    color: #7163fd;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+    border-radius: 0;
+}
+
+.pagination-status .pagination-status__btn:focus {
+    outline: none;
+}
+
+.pagination-status .pagination-status__btn--active,
+.pagination-status .pagination-status__btn:hover {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+    cursor: pointer;
+}
+
+.pagination-status .pagination-status__btn--disable,
+.pagination-status .pagination-status__btn--disable:hover {
+    color: #d0d0d0;
+    cursor: default;
+    border-color: #d0d0d0;
+    background-color: #fff;
+}
+.filters label{
+    color: #363636;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.depositId{
+    color: #7163fd;
+    cursor: pointer;
+}
+.depositId:hover{
+    text-decoration: underline;
+}
+.pageWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.tableWrapper{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 76%;
+}
+.tableWrapperAdjust{
+    flex-basis: 100%;
+}
+.detailTransaction{
+    height: 100%;
+    background-color: #fff;
+    width: 20%;
+    padding: 1rem;
+    box-shadow: 0 0 1rem #cfcfcf;
+    border-radius: 0.5rem;
+}
+.detailTransaction h2{
+    display: block;
+}
+.detailTransaction p{
+    word-wrap: break-word;
+    font-weight: normal;
+}
+.detailTransaction label{
+    font-weight: bold;
+    margin-top: 1rem;
+    display: block;
+}
+.detailTransaction .buttonPrimary{
+    display: block;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #fff !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    ::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+    }
+  }
+
+  @media (max-width:767px){
+      .tableWrapperAdjust{
+          overflow-x: auto;
+          white-space: nowrap;
+      }
+  }
